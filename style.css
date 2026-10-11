@@ -1,0 +1,8 @@
+:root { color-scheme: light dark; --fond: #fafafa; --texte: #1d1d1f; --accent: #9146ff; }
+@media (prefers-color-scheme: dark) { :root { --fond: #18181b; --texte: #efeff1; } }
+body { background: var(--fond); color: var(--texte); font: 17px/1.6 system-ui, sans-serif;
+       max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+h1, h2 { line-height: 1.25; }
+a { color: var(--accent); }
+nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+footer { margin-top: 48px; font-size: 14px; opacity: .7; }
