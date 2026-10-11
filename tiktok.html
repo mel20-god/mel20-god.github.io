@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connexion TikTok — Mel20 Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a href="index.html">Accueil</a><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions d'utilisation</a></nav>
+<h1>Connexion TikTok</h1>
+<p id="msg">Aucune autorisation reçue.</p>
+<script>
+  // TikTok renvoie ici après autorisation : on affiche le code à recopier dans Mel20 Studio (rien n'est envoyé ailleurs).
+  const p = new URLSearchParams(location.search);
+  const m = document.getElementById("msg");
+  if (p.get("code")) m.textContent = "Autorisation reçue. Copie toute l'adresse de cette page et colle-la dans Mel20 Studio.";
+  else if (p.get("error")) m.textContent = "Autorisation refusée : " + p.get("error");
+</script>
+</body>
+</html>
