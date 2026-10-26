@@ -6,3 +6,4 @@ h1, h2 { line-height: 1.25; }
 a { color: var(--accent); }
 nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
 footer { margin-top: 48px; font-size: 14px; opacity: .7; }
+.logo { height: 44px; width: auto; vertical-align: middle; margin-right: 12px; }
